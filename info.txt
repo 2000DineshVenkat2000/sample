@@ -1,1 +1,9 @@
 Hello GIT
+git init
+git remote add origin 'https://github.com/2000DineshVenkat2000/Web-Portfolio.git'
+git pull origin master
+git status
+git add -A
+git commit -a -m "first commit"
+git log
+git push origin master
