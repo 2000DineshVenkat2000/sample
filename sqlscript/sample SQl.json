@@ -1,5 +1,5 @@
 {
-	"name": "SQL script 1",
+	"name": "sample SQl",
 	"properties": {
 		"content": {
 			"query": "select top 10 * from \n  OPENROWSET(\n     BULK 'https://lakedemo.blob.core.windows.net/opendatalake/trips/',\n     FORMAT='CSV'\n  ) AS [rides]\n\n  ",
