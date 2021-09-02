@@ -1,0 +1,17 @@
+{
+	"name": "SQL alpha",
+	"properties": {
+		"content": {
+			"query": "select top 10 * from \n  OPENROWSET(\n     BULK 'https://lakedemo.blob.core.windows.net/opendatalake/trips/',\n     FORMAT='PARQUET'\n  ) AS [rides]\n\n  ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
